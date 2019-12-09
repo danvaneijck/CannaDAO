@@ -1,9 +1,72 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>
-      Tab Two
+      CannaCoin Wallet
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content></ion-content>
+<ion-content>
+  <ion-card padding>
+    <ion-card-title float-left >Balance: </ion-card-title>
+    <ion-card-title float-right>50.00 CANNA</ion-card-title>
+  </ion-card>
+  <ion-card>
+    <ion-card-content>
+      <ion-card-title>Send Funds</ion-card-title>
+      <ion-input placeholder="Receiver address"></ion-input>
+      <ion-button float-right>Send</ion-button>
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-card-content>
+      <ion-card-title>Receive Funds</ion-card-title>
+      <ion-img src="./assets/publickey.png"></ion-img>
+      <ion-text>1BsxQuee5cg8EhJJqSGbAwrqi1hKSckz1</ion-text>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-content>Transaction history</ion-card-content>
+    <ion-list>
+      <ion-item>
+        <ion-label position="stacked">
+          <ion-icon name="arrow-up"></ion-icon>
+          1HnMHzzs8n75JtED7nNTqexMowGJ3JzRyC
+        </ion-label>
+        <ion-label float-right>
+          0.043 CANNA
+        </ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label position="stacked">
+          <ion-icon name="arrow-down"></ion-icon>
+          1qBNYKX3beAcrwBDsQrL96Q4MQMqGu2gF
+        </ion-label>
+        <ion-label float-right>
+          0.123 CANNA
+        </ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label position="stacked">
+          <ion-icon name="arrow-down"></ion-icon>
+          19cpdQzgwKfM6uRYMBhAVnJfNrG9joPE7
+        </ion-label>
+        <ion-label float-right>
+          0.534 CANNA
+        </ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label position="stacked">
+          <ion-icon name="arrow-up"></ion-icon>
+          1J1fhMLAXn6uQiCkU9agtTgG3bWGadtijA
+        </ion-label>
+        <ion-label float-right>
+          0.003 CANNA
+        </ion-label>
+      </ion-item>
+    </ion-list>
+  </ion-card>
+
+
+</ion-content>

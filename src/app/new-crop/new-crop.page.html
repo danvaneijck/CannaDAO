@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+
+    <ion-title>New Crop</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding-start padding-end>
+  <ion-input padding-start placeholder="My Grow" [(ngModel)]="title">
+    Title of Grow:
+  </ion-input>
+  <ion-input padding-start placeholder="White Widow" [(ngModel)]="genetics">
+    Seed Genetics:
+  </ion-input>
+  <ion-input padding-start type="number" placeholder="1" [(ngModel)]="numPlants">
+    Number of plants:
+  </ion-input>
+
+  <ion-button expand="block" (click)="addCrop()">Add Crop</ion-button>
+
+</ion-content>

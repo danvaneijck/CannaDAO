@@ -8,6 +8,10 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import {CropProvider} from '../providers/crops/crops';
+import {OrderProvider} from '../providers/orders/orders';
+import {ListingProvider} from '../providers/listings/listings';
+import {ProposalProvider} from '../providers/proposals/proposals';
 
 @NgModule({
   declarations: [AppComponent],
@@ -16,6 +20,10 @@ import { AppComponent } from './app.component';
   providers: [
     StatusBar,
     SplashScreen,
+    CropProvider,
+    OrderProvider,
+    ListingProvider,
+    ProposalProvider,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
   ],
   bootstrap: [AppComponent]

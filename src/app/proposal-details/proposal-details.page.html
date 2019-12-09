@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>{{this.data.title}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card padding>
+    <ion-card-content>{{this.data.title}}</ion-card-content>
+    <ion-card-content>Made by: {{this.data.author}}</ion-card-content>
+    <ion-card-content>Description: {{this.data.description}}</ion-card-content>
+    <ion-card-title>{{this.data.requestedFunds}} CANNA</ion-card-title>
+    <ion-card-title>{{this.data.requestedRep}} REP</ion-card-title>
+    <ion-card-content>
+      Support:
+      <ion-progress-bar value="0.7"></ion-progress-bar>
+    </ion-card-content>
+    <ion-button expand="block">Place Vote</ion-button>
+  </ion-card>
+</ion-content>

@@ -1,9 +1,45 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>
-      Tab Three
+      Marketplace
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content></ion-content>
+<ion-content>
+  <ion-card padding>
+    <ion-card-title>My Listings</ion-card-title>
+    <ion-list>
+      <ion-item *ngFor="let a of this.listings">
+        <ion-img slot="start" style="width: 80px; height: 80px;" src={{a.crop.image}}></ion-img>
+        <ion-label position="stacked">Price: {{a.price}} CANNA/gram</ion-label>
+        <ion-label position="stacked">Date: {{(a.date.getMonth() + 1) + '/' + a.date.getDate()}}</ion-label>
+        <ion-label position="stacked">Quantity: {{a.quantity}} grams </ion-label>
+      </ion-item>
+    </ion-list>
+  </ion-card>
+
+  <ion-card padding>
+  <ion-card-title>Received Orders</ion-card-title>
+    <ion-list>
+      <ion-item *ngFor="let a of this.orders">
+        <ion-img slot="start" style="width: 80px; height: 80px;" src={{a.crop.image}}></ion-img>
+        <ion-label position="stacked">Price: {{a.price}} CANNA</ion-label>
+        <ion-label position="stacked">Date: {{(a.date.getMonth() + 1) + '/' + a.date.getDate()}}</ion-label>
+        <ion-label position="stacked">Quantity: {{a.quantity}} grams </ion-label>
+      </ion-item>
+    </ion-list>
+</ion-card>
+
+  <ion-card padding>
+    <ion-card-title>Completed Orders</ion-card-title>
+    <ion-list>
+      <ion-item *ngFor="let a of this.completedOrders">
+        <ion-img slot="start" style="width: 80px; height: 80px;" src={{a.crop.image}}></ion-img>
+        <ion-label position="stacked">Price: {{a.price}} CANNA</ion-label>
+        <ion-label position="stacked">Date: {{(a.date.getMonth() + 1) + '/' + a.date.getDate()}}</ion-label>
+        <ion-label position="stacked">Quantity: {{a.quantity}} grams </ion-label>
+      </ion-item>
+    </ion-list>
+  </ion-card>
+</ion-content>

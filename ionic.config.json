@@ -1,5 +1,7 @@
 {
   "name": "cannaCoin",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      DAO community
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card padding>
+    <ion-card-title>My reputation</ion-card-title>
+    <ion-item>
+      <ion-icon slot="start" size="large" name="git-compare"></ion-icon>
+      <ion-card-content slot="end">100 REP</ion-card-content>
+    </ion-item>
+    <ion-button expand="block" color="light">
+      View REP history
+    </ion-button>
+  </ion-card>
+  <ion-card padding>
+    <ion-card-title>My Proposals</ion-card-title>
+    <ion-item *ngFor="let a of this.myProposals" (click)="viewProp(a)">
+      <ion-card-content position="stacked">{{a.title}}</ion-card-content>
+      <ion-label position="stacked">Request from: {{a.author}}</ion-label>
+      <ion-label position="stacked">Description: {{a.description}}</ion-label>
+      <ion-label position="stacked">Requested CANNA: {{a.requestedFunds}} </ion-label>
+    </ion-item>
+    <ion-button (click)="newProp()" expand="block" color="light">
+      Add new Proposal
+    </ion-button>
+  </ion-card>
+  <ion-card padding>
+    <ion-card-title>Community Proposals</ion-card-title>
+    <ion-item *ngFor="let a of this.proposals" (click)="viewProp(a)">
+      <ion-card-content position="stacked">{{a.title}}</ion-card-content>
+      <ion-label position="stacked">Request from: {{a.author}}</ion-label>
+      <ion-label position="stacked">Description: {{a.description}}</ion-label>
+      <ion-label position="stacked">Requested CANNA: {{a.requestedFunds}} </ion-label>
+    </ion-item>
+  </ion-card>
+
+
+</ion-content>

@@ -1,0 +1,71 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>{{this.data.title}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-img src="{{this.data.image}}"></ion-img>
+<ion-card>
+  <ion-card-content>{{this.data.genetics}}</ion-card-content>
+  <ion-card-content>Grow start date: {{this.data.startDate}}</ion-card-content>
+
+</ion-card>
+
+  <ion-button expand="block" color="light">
+    View REP breakdown
+  </ion-button>
+
+
+  <ion-card>
+    <ion-card-title padding-start>Grow statistics</ion-card-title>
+    <ion-card-content>Temperature
+      <ion-item>
+        <ion-range min="1000" max="2000" step="100" value="1400" snaps color="danger">
+          <ion-icon slot="start" size="small" color="danger" name="thermometer"></ion-icon>
+          <ion-icon slot="end" color="danger" name="thermometer"></ion-icon>
+        </ion-range>
+      </ion-item></ion-card-content>
+    <ion-card-content>PH levels
+      <ion-item>
+        <ion-range min="1000" max="2000" step="100" value="1300" snaps color="success">
+          <ion-icon slot="start" size="small" color="success" name="arrow-down"></ion-icon>
+          <ion-icon slot="end" color="success" name="arrow-up"></ion-icon>
+        </ion-range>
+      </ion-item>
+    </ion-card-content>
+    <ion-card-content>Humidity levels
+      <ion-item>
+        <ion-range min="1000" max="2000" step="100" value="7000" snaps color="primary">
+          <ion-icon slot="start" size="small" color="primary" name="cloud-outline"></ion-icon>
+          <ion-icon slot="end" color="primary" name="rainy"></ion-icon>
+        </ion-range>
+      </ion-item>
+    </ion-card-content>
+
+    <ion-card-content>Water usage
+      <ion-item>
+        <ion-range min="1000" max="2000" step="100" value="1200" snaps color="secondary">
+          <ion-icon slot="start" size="small" color="secondary" name="water"></ion-icon>
+          <ion-icon slot="end" color="secondary" name="water"></ion-icon>
+        </ion-range>
+      </ion-item>
+    </ion-card-content>
+    <ion-card-content>Electricity used
+      <ion-item>
+        <ion-range min="1000" max="2000" step="100" value="1500" snaps color="light">
+          <ion-icon slot="start" size="small" color="danger" name="flash"></ion-icon>
+          <ion-icon slot="end" color="danger" name="flash"></ion-icon>
+        </ion-range>
+      </ion-item>
+    </ion-card-content>
+    <ion-card-content>Light cycle
+    <ion-card-content>12 ON / 12 OFF</ion-card-content>
+    </ion-card-content>
+  </ion-card>
+
+
+</ion-content>

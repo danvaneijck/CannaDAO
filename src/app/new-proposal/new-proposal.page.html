@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+
+    <ion-title>New Proposal</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-input padding placeholder="My Proposal" [(ngModel)]="title">
+    Title of Proposal:
+  </ion-input>
+  <ion-input padding placeholder="This proposal is for..." [(ngModel)]="description">
+    Description:
+  </ion-input>
+  <ion-input padding type="number" placeholder="1" [(ngModel)]="funds">
+    Requested Funds:
+  </ion-input>
+  <ion-input padding type="number" placeholder="1" [(ngModel)]="rep">
+    Requested Reputation:
+  </ion-input>
+
+  <ion-button expand="block" (click)="addProp()">Add Proposal</ion-button>
+
+</ion-content>
